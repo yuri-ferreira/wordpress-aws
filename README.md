@@ -21,7 +21,7 @@ Para esse projeto foi solicitado uma aplicação Wordpress rodando via Docker em
    Balancer AWS para a aplicação
    Wordpress
 
-## Pontos importantes
+### Pontos importantes
 
 ---
 
