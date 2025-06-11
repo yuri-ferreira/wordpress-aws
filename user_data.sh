@@ -13,7 +13,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 sleep 15
 
 sudo mkdir -p /mnt/efs
-sudo mount -t efs -o tls,nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,_netdev,nofail fs-0b5ef83c2a0de7eda:/ /mnt/efs
+sudo mount -t efs -o tls,nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,_netdev,nofail fs-1111111111111:/ /mnt/efs
 
 sudo mkdir -p /mnt/efs/html
 sudo chown -R 33:33 /mnt/efs/html
@@ -31,10 +31,10 @@ services:
     ports:
       - "80:80"
     environment:
-      WORDPRESS_DB_HOST: rds-wordpress.cov4muuo0xtj.us-east-1.rds.amazonaws.com:3306
-      WORDPRESS_DB_NAME: bd_wordpress
-      WORDPRESS_DB_USER: admin
-      WORDPRESS_DB_PASSWORD: bd1020wordpress
+      WORDPRESS_DB_HOST: 
+      WORDPRESS_DB_NAME: 
+      WORDPRESS_DB_USER: 
+      WORDPRESS_DB_PASSWORD: 
     volumes:
       - /mnt/efs/html:/var/www/html
 EOF
