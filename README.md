@@ -28,20 +28,17 @@ Para esse projeto foi solicitado uma aplicação Wordpress rodando via Docker em
 1. Não utilizar ip público para saída do
    serviços WP (Evitem publicar o serviço
    WP via IP Público)
-2. Sugestão para o tráfego de internet
-   sair pelo LB (Load Balancer Classic)
-3. Pastas públicas e estáticos do
+2. Pastas públicas e estáticos do
    wordpress sugestão de utilizar o
    EFS (Elastic File Sistem)
-4. Fica a critério de cada integrante
+3. Fica a critério de cada integrante
    usar Dockerfile ou
    Dockercompose;
-5. Necessário demonstrar a aplicação
-   wordpress funcionando (tela de
-   login)
-6. Aplicação Wordpress precisa estar
+4. Necessário demonstrar a aplicação
+   wordpress funcionando;
+5. Aplicação Wordpress precisa estar
    rodando na porta 80 ou 8080;
-7. Utilizar repositório git para
+6. Utilizar repositório git para
    versionamento;
    Criar documentação.
 
