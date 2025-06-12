@@ -70,13 +70,14 @@ Regras de entrada:
 | Tipo |       Origem       |
 | :--- | :----------------: |
 | HTTP | Security Group ALB |
-| SSH  |       Meu IP       |
 
 Regras de saída:
 
-| Tipo            |  Destino  |
-| :-------------- | :-------: |
-| Todo o trágfego | 0.0.0.0/0 |
+| Tipo         |        Destino        |
+| :----------- | :-------------------: |
+| MySQL/Aurora | Security Group do RDS |
+| NFS          | Security Group do EFS |
+| HTTP         |       0.0.0.0/0       |
 
 ---
 
@@ -122,9 +123,9 @@ Regras de entrada:
 
 Regras de saída:
 
-| Tipo            |  Destino  |
-| :-------------- | :-------: |
-| Todo o trágfego | 0.0.0.0/0 |
+| Tipo |      Destino       |
+| :--- | :----------------: |
+| HTTP | Security Group EC2 |
 
 ## 3. Criar e configurar RDS (MySQL)
 
